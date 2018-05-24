@@ -1,0 +1,77 @@
+@media only screen and (max-width: 1150px) {
+	#restaurant-container, #reviews-container {
+		padding-left: 10px;
+	}
+}
+
+@media only screen and (max-width: 750px) {
+	#breadcrumb {
+		width: 100%;
+	}
+	.inside #map-container {
+		position: relative;
+		width: 100%;
+		right: unset;
+		height: 300px;
+		top: 130px;
+	}
+	.inside #restaurant-container {
+		position: relative;
+		top: 130px;
+		max-width: 100%;
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		padding-top: 20px;
+		align-items: center;
+		text-align: center;
+    padding-left: 0px;
+	}
+	#restaurant-container > #restaurant-name {
+		max-width: 100%;
+		font-size: 17pt;
+	}
+  .inside #restaurant-placeholder {
+    position: relative;
+  }
+	#restaurant-cuisine {
+		opacity: 0.8;
+		position: absolute;
+		border-bottom-right-radius: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5px;
+	}
+	#restaurant-img {
+		border-bottom-right-radius: 20px;
+		border-top-left-radius: 20px;
+	}
+	.inside #reviews-container {
+		position: relative;
+		top: 130px;
+    width: 100%;
+    padding-left: 0px;
+	}
+  #reviews-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #reviews-container > h2 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+	.filter-options select {
+		width: 30%;
+	}
+	.filter-options h2 {
+		width: 15%;
+	}
+	#restaurants-list li {
+		margin: 0px;
+		margin-bottom: 15px;
+	}
+}
