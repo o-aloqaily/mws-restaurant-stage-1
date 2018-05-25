@@ -1,4 +1,4 @@
-const upToDateCacheName = 'restaurant-reviews-v7';
+const upToDateCacheName = 'restaurant-reviews-v10';
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(upToDateCacheName).then((cache) => {
