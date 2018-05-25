@@ -1,6 +1,20 @@
 let restaurant;
 var map;
 
+// Google developers page recommends registering the service worker
+// when the load event fires.
+window.addEventListener('load', () => {
+  if (!navigator.serviceWorker) return;
+
+  navigator.serviceWorker.register('/sw.js')
+  .then((reg) => {
+    console.log('SW Registration succeeded');
+  })
+  .catch((error) => {
+    console.log(`SW Registration failed, ${error} `);
+  })
+});
+
 /**
  * Initialize Google map, called from HTML.
  */

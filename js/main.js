@@ -4,7 +4,7 @@ let restaurants,
 var map
 var markers = []
 
-// Google developers page recommends registring the service worker
+// Google developers page recommends registering the service worker
 // when the load event fires.
 window.addEventListener('load', () => {
   if (!navigator.serviceWorker) return;
